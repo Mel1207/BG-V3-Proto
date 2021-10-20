@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+*, html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 230px;
+  white-space: nowrap;
+  color: rgba(61, 61, 61, 0.2);
+  margin: 0px;
+  line-height: 255px;
+}
+
+.secondary {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+}
+
+.bg-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.motion-1 {
+  transform: translateX(-30%);
+  animation: right infinite 20s alternate;
+}
+
+.motion-2 {
+  transform: translateX(-10%);
+  animation: left infinite 27s alternate;
+}
+
+.motion-3 {
+  transform: translateX(-30%);
+  animation: right infinite 20s alternate;
+  animation-delay: 1s;
+}
+
+@keyframes right {
+  0% {
+    transform: translateX(2%);
+  }
+  100% {
+    transform: translateX(-10%);
+  }
+}
+@keyframes left {
+  0% {
+    transform: translateX(-15%);
+  }
+  100% {
+    transform: translateX(-2%);
+  }
+}
+.bg-overlay {
+  height: 100%;
+  width: 800px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: url("../img-bg.jpg");
+  background-size: cover;
+  z-index: 1;
+}
+
+/*# sourceMappingURL=main.css.map */
